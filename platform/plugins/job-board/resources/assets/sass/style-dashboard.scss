@@ -1,0 +1,392 @@
+@import 'dashboard/abstracts/variables';
+@import 'dashboard/abstracts/mixins';
+
+@import 'dashboard/base/common';
+@import 'dashboard/base/animation';
+@import 'dashboard/base/typography';
+
+@import 'dashboard/components/buttons';
+@import 'dashboard/components/card';
+@import 'dashboard/components/tabs';
+@import 'dashboard/components/circle-chart';
+
+@import '../../../../../core/base/resources/assets/sass/custom/select2';
+
+@import 'dashboard/components/form';
+@import 'dashboard/components/misc';
+
+@import 'dashboard/layout/header';
+@import 'dashboard/layout/navigation';
+@import 'dashboard/layout/sidebar';
+@import 'dashboard/layout/footer';
+@import 'dashboard/layout/spacing';
+
+@import 'dashboard/pages/pages';
+@import 'dashboard/pages/profile';
+@import 'dashboard/pages/post-job';
+@import 'dashboard/pages/my-resume';
+@import 'dashboard/pages/dashboard-home';
+
+@import 'dashboard/layout/responsive';
+
+.header {
+    padding: 18px 20px !important;
+}
+
+.main {
+    margin-top: 77px;
+}
+
+.content {
+    min-height: calc(100vh - 220px) !important;
+}
+
+.nav {
+    padding: 0;
+}
+
+.nav .nav-item a {
+    color: #05264E;
+}
+
+.btn-sm {
+    padding: 5px 10px !important;
+}
+
+.btn.icon-edit {
+    background-position: 15px 11px;
+}
+
+.text-language {
+    img {
+        margin-right: 3px;
+    }
+}
+
+.table-hover {
+    tr {
+        td:hover {
+            transition-duration: unset;
+        }
+    }
+}
+
+.main-form {
+    input.form-control {
+        padding: 0.4rem 0.75rem;
+        color: #4f5d77 !important;
+    }
+}
+
+.control-label {
+    color: #05264E !important;
+    font-weight: 700 !important;
+}
+
+.widget-body {
+    label {
+        font-size: 12px;
+        color: #4f5d77 !important;
+    }
+}
+
+#sample-permalink {
+    a {
+        span {
+            color: $color-brand-2;
+        }
+    }
+}
+
+#list-others-language {
+    a {
+        color: $color-brand-2;
+    }
+}
+
+.icon-close {
+    color: #0b0b0b !important;
+    margin-left: 5px;
+}
+
+.btn:not(.btn-sm):not(.btn-lg) {
+    line-height: 1 !important;
+}
+
+.media {
+    align-items: center;
+    display: flex;
+
+    h6 {
+        span {
+            display: inline-block;
+            min-width: 50px;
+            font-size: 14px;
+        }
+    }
+
+    .icon-arrow {
+        color: #3BB77E;
+        margin-left: 10px;
+    }
+}
+
+.vertical-timeline {
+    margin: 0 10px;
+
+    .event-list {
+        align-items: center;
+        display: flex;
+        padding: 0 0 18px 30px;
+        position: relative;
+
+        .event-timeline-dot {
+            color: #6c757d;
+            font-size: 16px;
+            left: -9px;
+            position: absolute;
+            top: 0;
+            z-index: 9;
+        }
+    }
+}
+
+div.dataTables_wrapper {
+    div.dataTables_filter {
+        input {
+            margin-left: 30px !important;
+        }
+    }
+}
+
+.select2-container {
+    padding-bottom: 8px;
+}
+
+.select2-container--default {
+    .select2-selection--single {
+        box-shadow: unset;
+        min-height: 28px;
+
+        .select2-selection__rendered {
+            line-height: 18px;
+        }
+    }
+}
+
+.background-header-packages {
+    background-color: #0d6efd29;
+}
+
+.label-feature {
+    top: -2px;
+    transform: rotate(-45deg);
+    transition: all .5s ease;
+    font-size: 15px;
+}
+
+.dropdown, .nav-item {
+    .currency-switch {
+        margin-right: -35px;
+        padding-left: 10px;
+    }
+}
+
+.form-group {
+    .input-group {
+        .btn.default {
+            background: transparent;
+        }
+    }
+}
+
+.ui-select {
+    &:not(.select-search-full) {
+        color: #000;
+    }
+}
+
+.datepicker {
+    a.input-button {
+        border: 1px solid rgb(224, 230, 247) !important;
+        padding-bottom: 8px;
+    }
+}
+
+.sticky-bar {
+    .main-header {
+        .header-left {
+            .header-logo {
+                img {
+                    max-width: 250px;
+                    max-height: 50px;
+                }
+            }
+        }
+    }
+}
+
+.burger-icon {
+    position: fixed;
+}
+
+
+.control-label {
+    color: #A0ABB8;
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 22px !important;
+}
+
+.input-group-text {
+    padding-right: 18px;
+
+    .btn:hover {
+        background-color: transparent;
+    }
+}
+
+.input-group {
+    .input-group-text {
+        padding-right: 18px;
+    }
+}
+
+label {
+    color: #A0ABB8;
+}
+
+.icon-edit:before {
+    content: '' !important;
+}
+
+input[type=text] {
+    height: 36px;
+}
+
+button.btn {
+    border-radius: 3px;
+}
+
+.main-form, #app-job-board, .widget.meta-boxes {
+    .form-group {
+        input.form-control {
+            height: 36px;
+        }
+
+        .input-group {
+            button.btn {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+
+        textarea.form-control {
+            height: auto;
+        }
+
+        button.btn {
+            height: 100%;
+        }
+    }
+}
+
+#app-job-board {
+    .input-group {
+        button.btn {
+            i {
+                left: 20px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.widget-body {
+    .tagify.form-control {
+        padding: 0;
+    }
+}
+
+div.dataTables_wrapper {
+    div.dataTables_filter {
+        input {
+            margin-left: 0 !important;
+        }
+    }
+}
+
+
+small.charcounter {
+    padding-left: inherit;
+    padding-right: inherit;
+    font-size: .7rem;
+    color: #77797d;
+    top: 10px;
+}
+
+.form-group {
+    .control-label {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 100%;
+    }
+}
+
+#sample-permalink {
+    vertical-align: top;
+}
+
+#main {
+    .btn {
+        i {
+            vertical-align: top;
+            margin-top: 2px;
+        }
+    }
+
+    form {
+        .btn {
+            i {
+                margin-top: 4px;
+            }
+        }
+    }
+}
+
+.wrapper-action {
+    .btn {
+        &.btn-secondary {
+            &.dropdown-toggle {
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+.form-actions {
+    &.form-actions-fixed-top {
+        border: none;
+        box-shadow: none;
+        padding: 15px 20px;
+    }
+}
+
+header.sticky-bar {
+    &.stick {
+        .main-header {
+            .header-right {
+                .block-signin {
+                    .nav:first-child {
+                        .btn {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,8 @@
+{
+    "name": "Jobbox",
+    "namespace": "Theme\\Jobbox\\",
+    "description": "Laravel Job Portal Script",
+    "author": "Archi Elite",
+    "version": "1.0",
+    "required_plugins": []
+}
