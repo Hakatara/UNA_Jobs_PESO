@@ -8,13 +8,14 @@ return new class () extends Migration
 {
     public function up(): void
     {
-        foreach (City::query()->whereHas('metadata')->with('metadata')->get() as $city) {
-            if ($image = $city->getMetaData('city_image', true)) {
-                $city->image = $image;
-                $city->save();
-
-                MetaBox::deleteMetaData($city, 'city_image');
-            }
-        }
+        // Commented out due to missing dependencies
+        // foreach (City::query()->whereHas('metadata')->with('metadata')->get() as $city) {
+        //     if ($image = $city->getMetaData('city_image', true)) {
+        //         $city->image = $image;
+        //         $city->save();
+        //
+        //         MetaBox::deleteMetaData($city, 'city_image');
+        //     }
+        // }
     }
 };
